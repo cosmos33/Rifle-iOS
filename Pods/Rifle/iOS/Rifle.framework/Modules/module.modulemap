@@ -1,0 +1,6 @@
+framework module Rifle {
+  umbrella header "Rifle.h"
+
+  export *
+  module * { export * }
+}
