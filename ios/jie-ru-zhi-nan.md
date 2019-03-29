@@ -48,9 +48,9 @@ pod <font color=bf242a>'Rifle'</font>
 `Targets - Build Phases`处添加脚本
 
 
-![添加脚本](../../../assets/images/ios/jieru-1.png)
+![添加脚本](./images/jieru-1.png)
 
-![脚本内容](../../../assets/images/ios/jieru-2.png)
+![脚本内容](./images/jieru-2.png)
 
 
 - 脚本可以复制下面的内容
