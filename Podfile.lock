@@ -1,16 +1,16 @@
 PODS:
-  - Rifle (0.9.9)
+  - Rifle (1.0.2)
 
 DEPENDENCIES:
-  - Rifle (= 0.9.9)
+  - Rifle (= 1.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Rifle
 
 SPEC CHECKSUMS:
-  Rifle: 3d8bc605e5cefc5f1c4b212d3a20ff777036d36d
+  Rifle: 6b188272a7dd3f9898addc05a207410ef24e268a
 
-PODFILE CHECKSUM: 5d82b9ad26f34cfb6c2bad9dc85e6a725c0be2af
+PODFILE CHECKSUM: 4fdb90063fe9d97f475a8ba2d1751b59f0c3522d
 
 COCOAPODS: 1.5.3

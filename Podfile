@@ -1,11 +1,15 @@
 
-source 'https://github.com/CocoaPods/Specs.git'
-
 platform :ios, '9.0'
 
 
 target :TestRifle do
 
-pod 'Rifle', '0.9.9'
+pod 'Rifle', '1.0.2'
 
+end
+
+target :SwiftDemo do
+    
+pod 'Rifle', '1.0.2'
+    
 end

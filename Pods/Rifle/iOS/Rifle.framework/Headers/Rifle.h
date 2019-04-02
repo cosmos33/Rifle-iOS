@@ -111,7 +111,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //+ (BOOL)isAppCrashedOnStartUpExceedTheLimit;
 
-+ (void)setUploadBlock:(void(^)(NSString *path, NSDictionary *para, BOOL first, void(^succBlock)(NSURLResponse *res), void(^failedBlock)(NSError *error)))uploadBlock;
++ (void)setLogLevel:(RifleLogLevel)level consolePrint:(BOOL)consolePrint;
 
 @end
 

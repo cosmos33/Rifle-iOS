@@ -41,11 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RifleConfig : NSObject <NSCopying>
 
 /**
- *  SDK Debug信息开关, 默认关闭
- */
-@property (nonatomic, assign) BOOL debugMode;
-
-/**
  *  设置自定义渠道标识
  */
 @property (nonatomic, copy) NSString *channel;
@@ -56,62 +51,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *deviceId;
 
 /**
- *  设置自定义版本号,如果不设置则取 CFBundleVersion
+ *  设置自定义版本号,如果不设置则按下面规则来取："CFBundleShortVersionString (CFBundleVersion)"
  */
 @property (nonatomic, copy) NSString *customAppVersion;
-
-/**
- *  卡顿监控开关，默认关闭
- */
-//@property (nonatomic) BOOL blockMonitorEnable;
-
-/**
- *  卡顿监控判断间隔，单位为秒
- */
-//@property (nonatomic) NSTimeInterval blockMonitorTimeout;
-
-/**
- *  设置 App Groups Id (如有使用 Rifle iOS Extension SDK，请设置该值)
- */
-//@property (nonatomic, copy) NSString *applicationGroupIdentifier;
-
-/**
- *  进程内还原开关，默认开启
- */
-//@property (nonatomic) BOOL symbolicateInProcessEnable;
-
-/**
- *  非正常退出事件记录开关，默认关闭
- */
-//@property (nonatomic) BOOL unexpectedTerminatingDetectionEnable;
-
-/**
- *  页面信息记录开关，默认开启
- */
-//@property (nonatomic) BOOL viewControllerTrackingEnable;
 
 /**
  *  Rifle Delegate
  */
 @property (nonatomic, assign) id<RifleDelegate> delegate;
-
-/**
- * 控制自定义日志上报，默认值为RifleLogLevelSilent，即关闭日志记录功能。
- * 如果设置为RifleLogLevelWarn，则在崩溃时会上报Warn、Error接口打印的日志
- */
-@property (nonatomic, assign) RifleLogLevel reportLogLevel;
-
-/**
- * 控制台日志上报开关，默认开启
- */
-@property (nonatomic, assign) BOOL consolelogEnable;
-
-/**
- * 崩溃退出超时，如果监听到崩溃后，App一直没有退出，则到达超时时间后会自动abort进程退出
- * 默认值 5s， 单位 秒
- * 当赋值为0时，则不会自动abort进程退出
- */
-@property (nonatomic, assign) NSUInteger crashAbortTimeout;
 
 @end
 

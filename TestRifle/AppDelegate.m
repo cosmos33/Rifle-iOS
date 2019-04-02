@@ -19,8 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     RifleConfig *c = [RifleConfig new];
+    c.channel = @"C1";
+    c.deviceId = @"did";
+//    c.customAppVersion = @"1.0.1 (2)";
+    
     //设置自定义日志的上报级别，默认不上报
-    [c setReportLogLevel:RifleLogLevelInfo];
+    [Rifle setLogLevel:RifleLogLevelInfo consolePrint:NO];
     [Rifle startWithAppId:@"Your-App-ID" config:c];
 
     RFLogInfo(@" %s ",__func__);

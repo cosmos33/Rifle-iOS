@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0041947D225304640059CD78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041947C225304640059CD78 /* AppDelegate.swift */; };
+		0041947F225304640059CD78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041947E225304640059CD78 /* ViewController.swift */; };
+		00419482225304640059CD78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00419480225304640059CD78 /* Main.storyboard */; };
+		00419484225304650059CD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00419483225304650059CD78 /* Assets.xcassets */; };
+		00419487225304650059CD78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00419485225304650059CD78 /* LaunchScreen.storyboard */; };
+		0041948E22530BA80059CD78 /* RifleLogMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041948D22530BA80059CD78 /* RifleLogMacro.swift */; };
 		008D6AB3224C816900D0C3AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D6AB2224C816900D0C3AD /* AppDelegate.m */; };
 		008D6AB6224C816900D0C3AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D6AB5224C816900D0C3AD /* ViewController.m */; };
 		008D6AB9224C816900D0C3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008D6AB7224C816900D0C3AD /* Main.storyboard */; };
 		008D6ABB224C816B00D0C3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008D6ABA224C816B00D0C3AD /* Assets.xcassets */; };
 		008D6ABE224C816B00D0C3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008D6ABC224C816B00D0C3AD /* LaunchScreen.storyboard */; };
 		008D6AC1224C816B00D0C3AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008D6AC0224C816B00D0C3AD /* main.m */; };
+		B18E02BD02606A017612627A /* libPods-SwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD41B1B3C15A153A21AECA88 /* libPods-SwiftDemo.a */; };
 		EFDBF9B0B2B2FA90B48B80BB /* libPods-TestRifle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B07E844543E2618E6CAA7C4C /* libPods-TestRifle.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0041947A225304630059CD78 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0041947C225304640059CD78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0041947E225304640059CD78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00419481225304640059CD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00419483225304650059CD78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00419486225304650059CD78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00419488225304650059CD78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0041948C2253062C0059CD78 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = swiftDemo/BridgingHeader.h; sourceTree = SOURCE_ROOT; };
+		0041948D22530BA80059CD78 /* RifleLogMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RifleLogMacro.swift; path = swiftDemo/RifleLogMacro.swift; sourceTree = SOURCE_ROOT; };
 		008D6AAE224C816900D0C3AD /* TestRifle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRifle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008D6AB1224C816900D0C3AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		008D6AB2224C816900D0C3AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,10 +45,21 @@
 		008D6AC0224C816B00D0C3AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		018A72426AA1F6B3A3C6668F /* Pods-TestRifle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRifle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestRifle/Pods-TestRifle.debug.xcconfig"; sourceTree = "<group>"; };
 		16418DE17187E551B43D2F59 /* Pods-TestRifle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestRifle.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestRifle/Pods-TestRifle.release.xcconfig"; sourceTree = "<group>"; };
+		253B3720DF154F5F5E7DBA1B /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		64CFF5EC2C0337BB78107991 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD41B1B3C15A153A21AECA88 /* libPods-SwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07E844543E2618E6CAA7C4C /* libPods-TestRifle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestRifle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00419477225304630059CD78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18E02BD02606A017612627A /* libPods-SwiftDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		008D6AAB224C816900D0C3AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +71,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0041947B225304640059CD78 /* SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0041948C2253062C0059CD78 /* BridgingHeader.h */,
+				0041948D22530BA80059CD78 /* RifleLogMacro.swift */,
+				0041947C225304640059CD78 /* AppDelegate.swift */,
+				0041947E225304640059CD78 /* ViewController.swift */,
+				00419480225304640059CD78 /* Main.storyboard */,
+				00419483225304650059CD78 /* Assets.xcassets */,
+				00419485225304650059CD78 /* LaunchScreen.storyboard */,
+				00419488225304650059CD78 /* Info.plist */,
+			);
+			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
 		008D6AA5224C816900D0C3AD = {
 			isa = PBXGroup;
 			children = (
 				008D6AB0224C816900D0C3AD /* TestRifle */,
+				0041947B225304640059CD78 /* SwiftDemo */,
 				008D6AAF224C816900D0C3AD /* Products */,
 				3DC29E94821CDF4B85EBAABE /* Pods */,
 				886D22605BA7FE027F7F8888 /* Frameworks */,
@@ -58,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				008D6AAE224C816900D0C3AD /* TestRifle.app */,
+				0041947A225304630059CD78 /* SwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +127,8 @@
 			children = (
 				018A72426AA1F6B3A3C6668F /* Pods-TestRifle.debug.xcconfig */,
 				16418DE17187E551B43D2F59 /* Pods-TestRifle.release.xcconfig */,
+				64CFF5EC2C0337BB78107991 /* Pods-SwiftDemo.debug.xcconfig */,
+				253B3720DF154F5F5E7DBA1B /* Pods-SwiftDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -91,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B07E844543E2618E6CAA7C4C /* libPods-TestRifle.a */,
+				AD41B1B3C15A153A21AECA88 /* libPods-SwiftDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +145,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00419479225304630059CD78 /* SwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00419489225304650059CD78 /* Build configuration list for PBXNativeTarget "SwiftDemo" */;
+			buildPhases = (
+				57ACDFCF36796093842D12CF /* [CP] Check Pods Manifest.lock */,
+				00419476225304630059CD78 /* Sources */,
+				00419477225304630059CD78 /* Frameworks */,
+				00419478225304630059CD78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDemo;
+			productName = SwiftDemo;
+			productReference = 0041947A225304630059CD78 /* SwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		008D6AAD224C816900D0C3AD /* TestRifle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 008D6AC4224C816B00D0C3AD /* Build configuration list for PBXNativeTarget "TestRifle" */;
@@ -123,9 +188,13 @@
 		008D6AA6224C816900D0C3AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = momo;
 				TargetAttributes = {
+					00419479225304630059CD78 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					008D6AAD224C816900D0C3AD = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -145,11 +214,22 @@
 			projectRoot = "";
 			targets = (
 				008D6AAD224C816900D0C3AD /* TestRifle */,
+				00419479225304630059CD78 /* SwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00419478225304630059CD78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00419487225304650059CD78 /* LaunchScreen.storyboard in Resources */,
+				00419484225304650059CD78 /* Assets.xcassets in Resources */,
+				00419482225304640059CD78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		008D6AAC224C816900D0C3AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +261,28 @@
 			shellPath = /bin/sh;
 			shellScript = "####################################################################\n#       请注意配置app-id 和 app-key\n####################################################################\nRIFLE_APP_ID=\"app-id\"\nRIFLE_APP_KEY=\"app-key\"\n\n####################################################################\n#       符号表默认只在非DEBUG下上传，如果想在DEBUG下上上传\n#       打开 RIFLE_FORCE_UPLOAD\n#       如果想要使用邮箱接收上传符号表日志，需要\n#       打开 RIFLE_SEND_EMAIL，另外需要配置 RIFLE_EMAIL_STRING\n####################################################################\nINFOPATH=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\nBundle_Name=`defaults read $INFOPATH CFBundleName`\nBundle_Version=`defaults read $INFOPATH CFBundleShortVersionString`\nBundle_Build_Number=`defaults read $INFOPATH CFBundleVersion`\n\nexport RIFLE_FORCE_UPLOAD=\"EN\" \nexport RIFLE_SEND_EMAIL=\"EN\"\nexport RIFLE_EMAIL_STRING=\"-o tls=no -o message-content-type=text -o message-charset=utf-8 -f your-mail@163.com -t your-mail@163.com -s smtp.163.com -xu user-name -xp user-password -u \\\" [Rifle上传符号表日志] $Bundle_Name $Bundle_Version($Bundle_Build_Number)\\\"\" \n\n####################################################################\n#       下面脚本会在构建阶段自动异步上传符号表,注意不要写错脚本地址\n####################################################################\n#./TestRifle/Rifle/Rifle.framework/run ${RIFLE_APP_ID} ${RIFLE_APP_KEY}\n./Pods/Rifle/iOS/Rifle.framework/run ${RIFLE_APP_ID} ${RIFLE_APP_KEY} # 如果使用cocoapods \n";
 		};
+		57ACDFCF36796093842D12CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8ED8E3508FAB9E733679E27C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +308,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00419476225304630059CD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0041947F225304640059CD78 /* ViewController.swift in Sources */,
+				0041948E22530BA80059CD78 /* RifleLogMacro.swift in Sources */,
+				0041947D225304640059CD78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		008D6AAA224C816900D0C3AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +331,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		00419480225304640059CD78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00419481225304640059CD78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00419485225304650059CD78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00419486225304650059CD78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		008D6AB7224C816900D0C3AD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -238,6 +366,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0041948A225304650059CD78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CFF5EC2C0337BB78107991 /* Pods-SwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5SS7YSZ2F;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momo.rifle.SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftDemo/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0041948B225304650059CD78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253B3720DF154F5F5E7DBA1B /* Pods-SwiftDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E5SS7YSZ2F;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momo.rifle.SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftDemo/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		008D6AC2224C816B00D0C3AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -392,6 +566,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00419489225304650059CD78 /* Build configuration list for PBXNativeTarget "SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0041948A225304650059CD78 /* Debug */,
+				0041948B225304650059CD78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		008D6AA9224C816900D0C3AD /* Build configuration list for PBXProject "TestRifle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
