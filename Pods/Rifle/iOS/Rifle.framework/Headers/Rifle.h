@@ -10,6 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+typedef NS_ENUM(NSUInteger, RifleExceptionType) {
+    RifleExceptionType_Cocoa = 1,
+    RifleExceptionType_CSharp = 2,
+    RifleExceptionType_JS = 3,
+    RifleExceptionType_Lua = 4,
+    RifleExceptionType_Custom = 5
+};
+
 @interface Rifle : NSObject
 
 /**
@@ -27,17 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)startWithAppId:(NSString *)appId
                 config:(RifleConfig * RIFLE_NULLABLE)config;
-
-/**
- *  使用指定配置初始化Rifle
- *
- *  @param appId 注册Rifle分配的应用唯一标识
- *  @param development 是否开发设备
- *  @param config 传入配置的 RifleConfig
- */
-//+ (void)startWithAppId:(NSString * RIFLE_NULLABLE)appId
-//     developmentDevice:(BOOL)development
-//                config:(RifleConfig * RIFLE_NULLABLE)config;
 
 /**
  *  设置用户标识
@@ -81,25 +79,22 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param error 错误信息
  */
-+ (void)reportError:(NSError *)error;
+//+ (void)reportError:(NSError *)error;
 
 /**
- *    @brief 上报自定义错误
+ *    @brief 上报自定义异常
  *
- *    @param category    类型(Cocoa=3,CSharp=4,JS=5,Lua=6)
+ *    @param category    RifleExceptionType类型，支持Cocoa/CSharp/JS/Lua/Custom
  *    @param aName       名称
  *    @param aReason     错误原因
  *    @param aStackArray 堆栈
  *    @param info        附加数据
- *    @param terminate   上报后是否退出应用进程
  */
-+ (void)reportExceptionWithCategory:(NSUInteger)category
++ (void)reportExceptionWithCategory:(RifleExceptionType)category
                                name:(NSString *)aName
                              reason:(NSString *)aReason
-                          callStack:(NSArray *)aStackArray
-                          extraInfo:(NSDictionary *)info
-                       terminateApp:(BOOL)terminate;
-
+                          callStack:(NSArray * RIFLE_NULLABLE)aStackArray
+                          extraInfo:(NSDictionary * RIFLE_NULLABLE)info;
 /**
  *  SDK 版本信息
  *
@@ -107,10 +102,21 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)sdkVersion;
 
+/**
+ *  SDK 版本信息
+ *
+ *  @return SDK版本号
+ */
 + (NSUInteger)sdkVersionNumber;
 
 //+ (BOOL)isAppCrashedOnStartUpExceedTheLimit;
 
+/**
+ *  设置Log的等级，是否在控制台打印日志
+ *
+ *  @param level              log等级，默认为RifleLogLevelSilent
+ *  @param consolePrint       是否在控制台打印日志，默认为 NO
+ */
 + (void)setLogLevel:(RifleLogLevel)level consolePrint:(BOOL)consolePrint;
 
 @end

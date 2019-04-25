@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let config = RifleConfig()
         config.channel = "C1"
-        config.deviceId = "did"
         Rifle.setLogLevel(.info, consolePrint: false)
         Rifle.start(withAppId: "app-id", config: config)
         

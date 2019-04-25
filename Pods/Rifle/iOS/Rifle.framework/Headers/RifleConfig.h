@@ -24,17 +24,39 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface RifleReport : NSObject
+/**
+ *  自定义渠道标识,同RifleConfig ：channel
+ */
+@property (nonatomic, copy) NSString *channel;
+
+/**
+ *  版本号,同RifleConfig ：customAppVersion
+ */
+@property (nonatomic, copy) NSString *appVersion;
+
+/**
+ *  app的启动时间，Unix 时间戳，单位是毫秒
+ */
+@property (nonatomic, assign) NSUInteger startTime;
+
+/**
+ *  app的crash时间，Unix 时间戳，单位是毫秒
+ */
+@property (nonatomic, assign) NSUInteger crashTime;
+
+@end
+
 @protocol RifleDelegate <NSObject>
 
 @optional
+
 /**
- *  发生异常时回调
+ *  当Rifle对象监测到程序在上次运行过程中出现crash，在下次启动Rifle的时候会同步调用这个方法。
  *
- *  @param exception 异常信息
- *
- *  @return 返回需上报记录，随异常上报一起上报
+ *  @param report app发生crash时的一些信息
  */
-- (NSString * RIFLE_NULLABLE)attachmentForException:(NSException * RIFLE_NULLABLE)exception;
+- (void)rifleDidDetectCrashForLastExecutionWithReport:(RifleReport *)report;
 
 @end
 
@@ -44,11 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  设置自定义渠道标识
  */
 @property (nonatomic, copy) NSString *channel;
-
-/**
- *  设置自定义设备唯一标识
- */
-@property (nonatomic, copy) NSString *deviceId;
 
 /**
  *  设置自定义版本号,如果不设置则按下面规则来取："CFBundleShortVersionString (CFBundleVersion)"

@@ -153,6 +153,7 @@
 				00419476225304630059CD78 /* Sources */,
 				00419477225304630059CD78 /* Frameworks */,
 				00419478225304630059CD78 /* Resources */,
+				318B19CBFEA1BC415EC5F084 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +173,7 @@
 				008D6AAB224C816900D0C3AD /* Frameworks */,
 				008D6AAC224C816900D0C3AD /* Resources */,
 				008D6AD3224CD05E00D0C3AD /* Rifle */,
+				F6DCC1BDBEF86C483D60DBA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +263,28 @@
 			shellPath = /bin/sh;
 			shellScript = "####################################################################\n#       请注意配置app-id 和 app-key\n####################################################################\nRIFLE_APP_ID=\"app-id\"\nRIFLE_APP_KEY=\"app-key\"\n\n####################################################################\n#       符号表默认只在非DEBUG下上传，如果想在DEBUG下上上传\n#       打开 RIFLE_FORCE_UPLOAD\n#       如果想要使用邮箱接收上传符号表日志，需要\n#       打开 RIFLE_SEND_EMAIL，另外需要配置 RIFLE_EMAIL_STRING\n####################################################################\nINFOPATH=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\nBundle_Name=`defaults read $INFOPATH CFBundleName`\nBundle_Version=`defaults read $INFOPATH CFBundleShortVersionString`\nBundle_Build_Number=`defaults read $INFOPATH CFBundleVersion`\n\nexport RIFLE_FORCE_UPLOAD=\"EN\" \nexport RIFLE_SEND_EMAIL=\"EN\"\nexport RIFLE_EMAIL_STRING=\"-o tls=no -o message-content-type=text -o message-charset=utf-8 -f your-mail@163.com -t your-mail@163.com -s smtp.163.com -xu user-name -xp user-password -u \\\" [Rifle上传符号表日志] $Bundle_Name $Bundle_Version($Bundle_Build_Number)\\\"\" \n\n####################################################################\n#       下面脚本会在构建阶段自动异步上传符号表,注意不要写错脚本地址\n####################################################################\n#./TestRifle/Rifle/Rifle.framework/run ${RIFLE_APP_ID} ${RIFLE_APP_KEY}\n./Pods/Rifle/iOS/Rifle.framework/run ${RIFLE_APP_ID} ${RIFLE_APP_KEY} # 如果使用cocoapods \n";
 		};
+		318B19CBFEA1BC415EC5F084 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-resources.sh",
+				"${PODS_ROOT}/Rifle/iOS/Rifle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Rifle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		57ACDFCF36796093842D12CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +327,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DCC1BDBEF86C483D60DBA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestRifle/Pods-TestRifle-resources.sh",
+				"${PODS_ROOT}/Rifle/iOS/Rifle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Rifle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestRifle/Pods-TestRifle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

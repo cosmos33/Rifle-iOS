@@ -17,16 +17,37 @@ class ViewController: UIViewController {
     }
 
     func creatButton() {
-        let b = UIButton.init(frame: CGRect(x: 100, y: 100, width: 100, height: 60));
-        b.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        b.setTitle("Test Crash", for: .normal)
-        b.setTitleColor(UIColor.blue, for: .normal)
-        self.view.addSubview(b)
+        let titles = ["Test Crash", "自定义异常"];
+        for i in 1...titles.count {
+            let t =  titles[i - 1]
+            let b = self.buttonWithType(type: i, des: t)
+            b.frame = CGRect(x: 100, y: 60 * i + 100, width: 100, height: 50)
+            b.backgroundColor = UIColor.blue
+            b.sizeToFit()
+            self.view.addSubview(b)
+        }
     }
     
-    @objc func buttonAction() {
-        let arr = [""]
-        print(arr[2])
+    func buttonWithType(type: Int, des: String) -> UIButton {
+        let b = UIButton.init(type: .custom)
+        b.setTitle(des, for: UIControl.State.normal)
+        b.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        b.addTarget(self, action: #selector(buttonAction), for: UIControl.Event.touchUpInside)
+        b.tag = type
+        return b
+    }
+    
+    @objc func buttonAction(b: UIButton) {
+        if 1 == b.tag {
+            let arr = [""]
+            print(arr[2])
+        } else if 2 == b.tag {
+            Rifle.reportException(withCategory: RifleExceptionType.cocoa, name: "ex-name", reason: "ex-reason", callStack: nil, extraInfo: nil)
+        }
+    }
+    
+    @objc func customExceptionButtonAction() {
+        
     }
 
 }

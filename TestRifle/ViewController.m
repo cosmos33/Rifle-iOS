@@ -22,7 +22,7 @@
 }
 
 - (void)createButton {
-    NSArray *titles = @[@"Test Crash"];
+    NSArray *titles = @[@"Test Crash",  @"自定义异常"];
     for (int i = 1; i <= titles.count; i++) {
         NSString *t = titles[i - 1];
         UIButton *b = [self buttonWithType:i des:t];
@@ -49,6 +49,8 @@
         if (t ==  1) {
             RFLogInfo(@" %s will crash",__func__);
             __unused id obj = @[@1][2];
+        }  else if (t == 2) {
+            [Rifle reportExceptionWithCategory:RifleExceptionType_Cocoa name:@"ex-name" reason:@"ex-reason" callStack:@[] extraInfo:nil];
         }
     };
     

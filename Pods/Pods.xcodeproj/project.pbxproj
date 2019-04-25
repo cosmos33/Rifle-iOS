@@ -13,17 +13,18 @@
 
 /* Begin PBXFileReference section */
 		07D708C7B3C7A0C105C127BE4FDFFB25 /* Pods-TestRifle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestRifle-resources.sh"; sourceTree = "<group>"; };
+		0C7F0F34A412962312D6D2C628CEB948 /* RifleLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RifleLog.h; path = iOS/Rifle.framework/Headers/RifleLog.h; sourceTree = "<group>"; };
 		0D726396776C825E8824EDE845B97CFC /* Pods-SwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftDemo-dummy.m"; sourceTree = "<group>"; };
 		1816F70F8E7E65E47C26128F5AD006B2 /* libPods-SwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SwiftDemo.a"; path = "libPods-SwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C2BB4722CEA5496F2C64AA1B54BAFB4 /* Rifle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rifle.h; path = iOS/Rifle.framework/Headers/Rifle.h; sourceTree = "<group>"; };
 		2E73884A6A34C8BDF795CF8AAE8D42F4 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3990BD59F09C58F37B49CCB31DFB648D /* Pods-SwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
 		45F0BB46A982601EA290C15325AE8796 /* Pods-SwiftDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftDemo-resources.sh"; sourceTree = "<group>"; };
-		62CA1228D42399ADFB41A79287C06F6F /* Rifle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rifle.framework; path = iOS/Rifle.framework; sourceTree = "<group>"; };
 		6D4C749BF7770430C7728E2A66CAE4F3 /* Pods-TestRifle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestRifle-acknowledgements.plist"; sourceTree = "<group>"; };
+		82FAC22B512BAE479920A499FCEB0D49 /* Rifle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rifle.framework; path = iOS/Rifle.framework; sourceTree = "<group>"; };
 		845E722764941AC146A2E8919555278D /* Pods-SwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		879C85210DF98D2191F94A8E9184A2F8 /* RifleLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RifleLog.h; path = iOS/Rifle.framework/Headers/RifleLog.h; sourceTree = "<group>"; };
+		875FD248C46554ED2EF807E610DEF04F /* RifleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RifleConfig.h; path = iOS/Rifle.framework/Headers/RifleConfig.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1CE2A44D2FC140B5107D2FFBD6B91AF /* Rifle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Rifle.bundle; path = iOS/Rifle.bundle; sourceTree = "<group>"; };
 		A9A399FDD7E39D2797D515646F24CD23 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AEAF6268EA1F17ADFC63FF4C9B69B7C9 /* Pods-TestRifle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestRifle-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C7864776414BFBD8D753B3B4080C8136 /* Pods-TestRifle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestRifle-frameworks.sh"; sourceTree = "<group>"; };
@@ -31,7 +32,7 @@
 		E3DA7F3428FA4E3DEF7099F4C9A303FE /* Pods-TestRifle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestRifle.release.xcconfig"; sourceTree = "<group>"; };
 		EFEC9FCA94F29DD4F3DEDC9C2E5BC66C /* libPods-TestRifle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestRifle.a"; path = "libPods-TestRifle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F710E63B26BA106EEE3AA82BC9108B7D /* Pods-TestRifle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestRifle-dummy.m"; sourceTree = "<group>"; };
-		FF89BF26E4978E5D528E57D36B8F8A97 /* RifleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RifleConfig.h; path = iOS/Rifle.framework/Headers/RifleConfig.h; sourceTree = "<group>"; };
+		FBC2B2DC81F133DCE5FB0836B2CCE784 /* Rifle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rifle.h; path = iOS/Rifle.framework/Headers/Rifle.h; sourceTree = "<group>"; };
 		FFCCB83BA3E3DD65AA5A0D587B29665D /* Pods-SwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,14 +54,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05B6B2CC4E062C64C529EAF5484F6845 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6EBB0DA3B0EA7C02FFEA6F7BFEE2324B /* Rifle */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,24 +61,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0FD38C40C5D9D86B57E69EA29D392F51 /* Frameworks */ = {
+		5C4EDBB4365DBA2EADF882742AACD508 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				62CA1228D42399ADFB41A79287C06F6F /* Rifle.framework */,
+				C56CF14E54E4563B4D50D7DD43D3D709 /* Rifle */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6EBB0DA3B0EA7C02FFEA6F7BFEE2324B /* Rifle */ = {
-			isa = PBXGroup;
-			children = (
-				2C2BB4722CEA5496F2C64AA1B54BAFB4 /* Rifle.h */,
-				FF89BF26E4978E5D528E57D36B8F8A97 /* RifleConfig.h */,
-				879C85210DF98D2191F94A8E9184A2F8 /* RifleLog.h */,
-				0FD38C40C5D9D86B57E69EA29D392F51 /* Frameworks */,
-			);
-			name = Rifle;
-			path = Rifle;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -93,7 +74,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				05B6B2CC4E062C64C529EAF5484F6845 /* Pods */,
+				5C4EDBB4365DBA2EADF882742AACD508 /* Pods */,
 				E74EF589AADDE4B73C9F44817F5DB0C0 /* Products */,
 				FF7A47CDB505EA1F0601FB1DDE862E3F /* Targets Support Files */,
 			);
@@ -112,6 +93,35 @@
 			);
 			name = "Pods-SwiftDemo";
 			path = "Target Support Files/Pods-SwiftDemo";
+			sourceTree = "<group>";
+		};
+		BFB67728286CA6481A0E29BC7BFC64B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82FAC22B512BAE479920A499FCEB0D49 /* Rifle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1076F4784EDF2DBFA62CAF43255B8F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1CE2A44D2FC140B5107D2FFBD6B91AF /* Rifle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C56CF14E54E4563B4D50D7DD43D3D709 /* Rifle */ = {
+			isa = PBXGroup;
+			children = (
+				FBC2B2DC81F133DCE5FB0836B2CCE784 /* Rifle.h */,
+				875FD248C46554ED2EF807E610DEF04F /* RifleConfig.h */,
+				0C7F0F34A412962312D6D2C628CEB948 /* RifleLog.h */,
+				BFB67728286CA6481A0E29BC7BFC64B9 /* Frameworks */,
+				C1076F4784EDF2DBFA62CAF43255B8F9 /* Resources */,
+			);
+			name = Rifle;
+			path = Rifle;
 			sourceTree = "<group>";
 		};
 		E74EF589AADDE4B73C9F44817F5DB0C0 /* Products */ = {
