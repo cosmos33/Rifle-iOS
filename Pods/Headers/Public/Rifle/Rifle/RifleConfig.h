@@ -1,1 +1,0 @@
-../../../../Rifle/iOS/Rifle.framework/Headers/RifleConfig.h

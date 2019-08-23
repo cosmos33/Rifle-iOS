@@ -82,7 +82,7 @@ typedef NS_ENUM(NSUInteger, RifleExceptionType) {
 //+ (void)reportError:(NSError *)error;
 
 /**
- *    @brief 上报自定义异常
+ *    @brief 上报自定义异常，如果 setEnableRecordCustomException 设置为 NO，则无任何操作；默认是YES
  *
  *    @param category    RifleExceptionType类型，支持Cocoa/CSharp/JS/Lua/Custom
  *    @param aName       名称
@@ -118,6 +118,20 @@ typedef NS_ENUM(NSUInteger, RifleExceptionType) {
  *  @param consolePrint       是否在控制台打印日志，默认为 NO
  */
 + (void)setLogLevel:(RifleLogLevel)level consolePrint:(BOOL)consolePrint;
+
+/**
+ *  是否记录自定义异常，默认是YES
+ *
+ *  @param en              是否记录
+ */
++ (void)setEnableRecordCustomException:(BOOL)en;
+
+/**
+ *  进入新页面调用,统计当前crash/异常发生所在页面.
+ *
+ *  @param pageName  当前页面名字
+ */
++ (void)updateCurrentPage:(NSString *)pageName;
 
 @end
 

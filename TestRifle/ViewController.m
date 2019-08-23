@@ -21,6 +21,11 @@
     [self createButton];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [Rifle updateCurrentPage:@"RootViewController"];
+}
+
 - (void)createButton {
     NSArray *titles = @[@"Test Crash",  @"自定义异常"];
     for (int i = 1; i <= titles.count; i++) {

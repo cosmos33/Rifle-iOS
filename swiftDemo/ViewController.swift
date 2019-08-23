@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         RFLogInfo(format: "%@", #function);
         self.creatButton()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        Rifle.updateCurrentPage("RootViewController")
+    }
 
     func creatButton() {
         let titles = ["Test Crash", "自定义异常"];
