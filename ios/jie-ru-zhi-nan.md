@@ -159,5 +159,29 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 </pre>
 
 
+**业务标签**
+⚠️如果使用了业务标签功能,SDK需要知道每个页面名,请在项目的`viewController`基类的`viewWillAppear:`方法中调用`+updateCurrentPage:`方法**(推荐)**,或者使用`MathodSwizzing` hook `viewWillAppear:`方法添加.
+
+- Objective-C
+
+```
+//BaseViewController.m
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [Rifle updateCurrentPage:@"RootViewController"];
+}
+```
+
+- Swift
+
+```
+//BaseViewController.swift
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    Rifle.updateCurrentPage("RootViewController")//页面标识可以自定义,例如在webView页面可以传递URL等信息作为页面标识.
+}
+```
+
+
 
 
